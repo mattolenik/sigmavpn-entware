@@ -37,3 +37,8 @@ ipk:
 	sed s/\_DATE_/`date -u +%m%d%Y`/ $(DISTROOT)/CONTROL/control.src > $(DISTROOT)/CONTROL/control
 	fakeroot chown -R root:root build/dist
 	fakeroot ./ipkg-build $(DISTROOT) $(BUILD)
+
+clean:
+	rm -rf $(BUILD)
+	make -C libsodium clean
+	make -C sigmavpn clean
