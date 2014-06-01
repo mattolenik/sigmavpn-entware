@@ -1,0 +1,9 @@
+[submodule "sigmavpn"]
+	path = sigmavpn
+	url = git@github.com:mattolenik/sigmavpn.git
+[submodule "libsodium"]
+	path = libsodium
+	url = git@github.com:jedisct1/libsodium.git
+[submodule "asuswrt-merlin"]
+	path = asuswrt-merlin
+	url = git@github.com:RMerl/asuswrt-merlin.git

@@ -1,0 +1,8 @@
+Package: sigmavpn-git
+Version: 1.0.0-_DATE_
+Architecture: entware
+Maintainer: olenikm@gmail.com
+Description: SigmaVPN build from git
+Source: https://code.google.com/p/sigmavpn
+Section: net
+Priority: optional
