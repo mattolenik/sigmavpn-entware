@@ -34,6 +34,7 @@ ipk:
 	mkdir -p $(OPT)
 	cp -aR ipk-src/* $(DISTROOT)
 	cp -aR $(BUILDROOT)/bin $(OPT)
+	cp -aR $(BUILDROOT)/lib $(OPT)
 	sed s/\_DATE_/`date -u +%m%d%Y`/ $(DISTROOT)/CONTROL/control.src > $(DISTROOT)/CONTROL/control
 	fakeroot chown -R root:root build/dist
 	fakeroot ./ipkg-build $(DISTROOT) $(BUILD)
